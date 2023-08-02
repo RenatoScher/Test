@@ -13,7 +13,8 @@ body > div {
     margin: 0;
     background-color: var(--backColor);
     display: flex;
-    justify-content: center;
+    flex-flow: column nowrap;
+    align-items: center;
     height: 100%;
     position: relative;
 }
@@ -73,4 +74,11 @@ footer p {
 footer p:last-child {
     align-self: flex-end;
     margin-top: -10px;
+}
+.opaganastar{
+    width: 500px;
+    height: 700px;
+    background-color: #9980FA;
+    border-radius: 10px;
+    outline : 10px solid #725ACF;
 }
