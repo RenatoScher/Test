@@ -1,35 +1,108 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <title>Better HTML</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <head>
+        <meta charset="UTF-8">
+        <title>Better HTML - Index</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div>
-        <div id="pageSelector">
+        <div id="Menupremium" class="menuOpen">
+            <button id="Headshotarow"><img src="images/icons/Vector.png" alt="Arrow"></button>
+            <a href="#" class="square"> <p>Home</p> </a>
+            <a href="innerLinks/tagsEstruturais.html" class="square"> <p>Tags E.</p> </a>
+            <a href="innerLinks/tagsTexto.html" class="square"> <p>Tags N.</p> </a>
+            <a href="innerLinks/refs.html" class="square"> <p>Refs.</p> </a>
 
+            <script src="JS/menuButton.js"></script>
         </div>
 
-        <Header>
-            <h1>
-                Better HTML
-            </h1>
-            <h2>
-                Tags Semânticas
-            </h2>
-        </Header>
+        <div id="maincharacter">
 
-        <main>
-            WHAT THE FUCK IS A KILOMETERRRRRRRRRR
-            <div class="opaganastar"></div>
-        </main>
+            <Header>
+                <h1>
+                    Better HTML
+                </h1>
+                <h2>
+                    Tags Semânticas
+                </h2>
+            </Header>
 
+
+            <main>
+                <article id="1OQS">
+
+                    <h3>O que são?</h3>
+
+                    <p>
+                        Tags semânticas são tags que possuem seu propósito ou tipo de conteúdo bem definido, facilitando a visualização e entendimento do código tanto para os programadores quanto para a máquina.
+                    </p>
+
+                </article>
+
+
+                <article id="2PQU">
+
+                    <h3>Por que usá-las?</h2>
+
+                    <section>
+
+                        <h4>Facilitam a organização do código</h4>
+
+                        <p>Apesar de possuírem o mesmo efeito visual, é muito mais fácil para o programador entender o código quando usamos essas tags, afinal, elas definem bem o seu conteúdo. Aqui um exemplo:</p>
+
+                        <div class="imgContainer" id="compareCode">
+                            <div><img src="images/divs_Only.png" alt="Apenas divs"> <p>Apenas Divs</p></div>
+                            <div><img src="images/beautyful_Code.png" alt="Nenhuma div"> <p>Código Semântico</p></div>
+                        </div>
+
+                        <p>Perceba como fica mais fácil para o “programador” entender e modificar o código quando cada linha tem seu sentido especificado.</p>
+
+                    </section>
+
+                    <section>
+
+                        <h4>Otimizam o funcionamento do site</h4>
+
+                        <p>Essas tags também otimizam o funcionamento do site, o tornando mais acessível para pessoas que usam ferramentas de acessibilidade, como, por exemplo, leitores de tela.</p>
+                        <p>Com o uso de tags que especificam o objetivo de seu conteúdo, essas ferramentas conseguem identificar o que cada parte do texto é. Assim, elas conseguem ler os títulos antes do conteúdo, separar o conteúdo principal do conteúdo secundário, etc.</p>
+                        
+                    </section>
+
+                    <section>
+
+                        <h4>Melhora o desempenho da página nas ferramentas de pesquisa</h4>
+
+                        <p>Como a máquina consegue entender o conteúdo da página quando ele é mais bem estruturado e hieraquizado, o site passa a subir no “ranking de busca” de ferramentas como o Google ou Firefox, podendo assim aparecer antes de outras que não possuem esse tipo de estrutura.</p>
+                        
+                    </section>
+
+                </article>
+                
+                <article id="3QSET">
+
+                    <h3>Quais são essas tags?</h3>
+
+                    <p>Todas as tags semânticas vão ter um aprofundamento maior em seus respectivos tópicos na <a href="innerLinks/tagsEstruturais.html">aba Tags</a> desse artigo</p>
+
+                </article>
+
+                <article id="4QUL">
+
+                    <h3>Quando usá-las?</h3>
+
+                    <p>Esse tipo de Tags devem ser usadas sempre que possível, visto que elas só trazem benefícios. Porém, é importante relembrar que elas não devem ser usadas para fins diferentes dos seus, e caso nenhuma tag tenha o fim desejado, não podemos ter medo de usar as tags Div e Span nessas ocasiões.</p>
+
+                </article>
+            </main>
+        </div>
         <footer>
-            <p>Referências e Links <a href="#">Aqui</a></p>
-            <p>Copyright&#169 2023</p>
+            <p>Referências e Links <a href="innerLinks/refs.html">Aqui</a></p>
+            <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" id="copyright">Copyright&#169 2023</a></p>
         </footer>
     </div>
+
+    <script src="JS/NO_MORE.js"></script>
 </body>
 </html>
