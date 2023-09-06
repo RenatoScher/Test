@@ -1,11 +1,415 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Better HTML - Tags Estruturais</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Better HTML - Tags Estruturais</title>
+        <link rel="stylesheet" href="tagsStyle.css">
 </head>
 <body>
+    <div>
+        <div id="Menupremium" class="menuOpen">
+            <button id="Headshotarow"><img src="../images/icons/Vector.png" alt="Arrow"></button>
+            <a href="../index.html" class="square"> <p>Home</p> </a>
+            <a href="#" class="square"> <p>Tags E.</p> </a>
+            <a href="tagsTexto.html" class="square"> <p>Tags N.</p> </a>
+            <a href="../refs.html" class="square"> <p>Refs.</p> </a>
+            <script src="JS/menuButton.js"></script>
+        </div>
+
+        <Header>
+            <h1>
+                Better HTML
+            </h1>
+            <h2>
+                Tags Estruturais
+            </h2>
+        </Header>
     
+        <div id="Sidebox">
+            <h4>
+                - Tags Estruturais:
+            </h4>
+            <ul>
+                <li><p>H1 - H6;</p></li>
+                <li><p>Form;</p></li>
+                <li><p>Table;</p></li>
+                <li><p>Address;</p></li>
+                <li><p>Header;</p></li>
+                <li><p>Section;</p></li>
+                <li><p>Article;</p></li>
+                <li><p>Details;</p></li>
+                <li><p>Summary;</p></li>
+                <li><p>Nav;</p></li>
+                <li><p>Main;</p></li>
+                <li><p>Aside;</p></li>
+                <li><p>Figure/Fig caption;</p></li>
+                <li><p>Footer;</p></li>
+            </ul>
+        </div>
+
+
+        <main>
+
+            <article id="Types">
+
+                <h3>Tipos de Tags Semânticas</h3>
+
+                <p>
+                    Existem 2 tipos de tags semânticas: as Estruturais e as do Nível de Texto. As estruturais servem para estruturar a página visualmente, enquanto as do Nível do Texto para alterar visualmente um texto dentro da página.
+                </p>
+                <a href="tagsTexto.html">Ir para as Tags do Nível do Texto</a>
+
+            </article>
+
+            <section>
+
+                <h3>Tags Estruturais</h3>
+
+                <article id="h1-h6Art">
+                    <h4>&lt;h1&gt; - &lt;h6&gt;</h4>
+
+                    <p>
+                        São usados para escrever um título para uma parte do site.
+                        Eles vão de &lt;h1&gt; até &lt;h6&gt;, e o número após o “h” define o tamanho e importância do título (sendo h1 maior e h6 o menor).
+                    </p>
+
+                    <div class="imgContainer sideBySide" id="compareCode">
+                        <figure>
+                            <figcaption>Código</figcaption>
+                            <img src="../images/divs_Only.png" alt="Apenas divs">
+                        </figure>
+                        
+                        <figure>
+                            <figcaption>Resultado</figcaption>
+                            <img src="../images/beautyful_Code.png" alt="Nenhuma div">
+                        </figure>
+                    </div>
+
+                    <p>
+                        É importante citar que h1 deve ser usado apenas uma vez no texto inteiro, descrevendo o título da página inteira. 
+                        E também que não se deve “pular” uma das sequências do h: primeiro use h1, depois h2, depois h3 e assim por diante, afinal, eles são organizados por ordem de importância também.</p>
+                </article>
+
+                <article id="formArt">
+                    <h4>&lt;form&gt;</h4>
+
+                    <p>
+                        São usados para construir formulários.
+                        Dentro dela, você pode por outras tags, como por exemplo a tag &lt;input&gt;, para criar blocos onde o usuário pode fornecer dados para o site.
+                    </p>
+
+                    <div class="imgContainer sideBySide" id="compareCode">
+                        <figure>
+                            <figcaption>Código</figcaption>
+                            <img src="../images/divs_Only.png" alt="Apenas divs">
+                        </figure>
+                        
+                        <figure>
+                            <figcaption>Resultado</figcaption>
+                            <img src="../images/beautyful_Code.png" alt="Nenhuma div">
+                        </figure>
+                    </div>
+
+                    <p>
+                        A propiedade “action” dessa tag se refere ao destino das informações dadas pelo usuário após ele clicar em um &lt;input&gt; do tipo “submit”.
+                    </p>
+                </article>
+
+                <article id="tableArt">
+                    <h4>&lt;table&gt;</h4>
+
+                    <p>
+                        São usados para construir tabelas, com quantia de colunas e fileiras customizáveis.
+                    </p>
+
+                    <div class="imgContainer sideBySide" id="compareCode">
+                        <figure>
+                            <figcaption>Código</figcaption>
+                            <img src="../images/divs_Only.png" alt="Apenas divs">
+                        </figure>
+                        
+                        <figure>
+                            <figcaption>Resultado</figcaption>
+                            <img src="../images/beautyful_Code.png" alt="Nenhuma div">
+                        </figure>
+                    </div>
+
+                    <p>
+                        É importante recitar que nessa tag, você pode definir uma nova linha com <tr>, um título com &lt;th&gt; e uma coluna com &lt;td&gt;, 
+                        que precisa estar necessariamente dentro de um &lt;tr&gt;. Caso o &lt;th&gt; esteja fora de um &lt;tr&gt;, ele vai ter a largura da tabela inteira, 
+                        servindo como um título geral para a mesma.
+                    </p>
+                </article>
+
+                <article id="adressArt">
+                    <h4>&lt;adress&gt;</h4>
+
+                    <p>
+                        É usada para definir informações de contato do autor de um documento ou artigo. É onde anexamos e-mails e números de celular por exemplo.
+                    </p>
+
+                    <div class="imgContainer feetByFeet" id="compareCode">
+                        <figure>
+                            <figcaption>Código</figcaption>
+                            <img src="../images/divs_Only.png" alt="Apenas divs">
+                        </figure>
+                        
+                        <figure>
+                            <figcaption>Resultado</figcaption>
+                            <img src="../images/beautyful_Code.png" alt="Nenhuma div">
+                        </figure>
+                    </div>
+
+                </article>
+
+                <article id="headerArt">
+                    <h4>&lt;header&gt;</h4>
+
+                    <p>
+                        Ela é usada como um contêiner para a introdução de um conteúdo. Ela geralmente contém:
+                        <ul>
+                            <li>Um ou mais dos elementos h1-h6;</li>
+                            <li>Informações de autoria da página;</li>
+                            <li>Um logo/ícone.</li>
+                        </ul>
+                    </p>
+
+                    <div class="imgContainer feetByFeet" id="compareCode">
+                        <figure>
+                            <figcaption>Código</figcaption>
+                            <img src="../images/divs_Only.png" alt="Apenas divs">
+                        </figure>
+                        
+                        <figure>
+                            <figcaption>Resultado</figcaption>
+                            <img src="../images/beautyful_Code.png" alt="Nenhuma div">
+                        </figure>
+                    </div>
+                </article>
+
+                <article id="sectionArt">
+                    <h4>&lt;section&gt;</h4>
+
+                    <p>
+                        É usada para indicar uma seção independente do conteúdo do site, o dividindo em diferentes “blocos” lógicos.
+                    </p>
+
+                    <div class="imgContainer feetByFeet" id="compareCode">
+                        <figure>
+                            <figcaption>Código</figcaption>
+                            <img src="../images/divs_Only.png" alt="Apenas divs">
+                        </figure>
+                        
+                        <figure>
+                            <figcaption>Resultado</figcaption>
+                            <img src="../images/beautyful_Code.png" alt="Nenhuma div">
+                        </figure>
+                    </div>
+
+                    <p>
+                        Esta não deve também ser usada para substituir a tag &lt;div&gt; completamente, como na criação da estrutura de uma página, onde devemos usar &lt;div&gt; no lugar de &lt;section&gt;.
+                    </p>
+                </article>
+
+                <article id="articleArt">
+                    <p>
+                        É usada para indicar um bloco de artigo no site. Ela deve conter pelo menos:
+                        <ul>
+                            <li>Um &lt;p&gt;;</li>
+                            <li>Um &lt;header&gt;;</li>
+                        </ul>
+                    </p>
+
+                    <div class="imgContainer feetByFeet" id="compareCode">
+                        <figure>
+                            <figcaption>Código</figcaption>
+                            <img src="../images/divs_Only.png" alt="Apenas divs">
+                        </figure>
+                        
+                        <figure>
+                            <figcaption>Resultado</figcaption>
+                            <img src="../images/beautyful_Code.png" alt="Nenhuma div">
+                        </figure>
+                    </div>
+
+                </article>
+
+                <article id="detailsArt">
+                    <p>
+                        É usada para criar um bloco de texto interativo com um título, onde o usuário pode comprimir e extender o texto clicando no título para otimizar o espaço ocupado pelo texto.
+                    </p>
+
+                    <div class="imgContainer feetByFeet" id="compareCode">
+                        <figure>
+                            <figcaption>Código</figcaption>
+                            <img src="../images/divs_Only.png" alt="Apenas divs">
+                        </figure>
+                        
+                        <figure>
+                            <figcaption>Resultado</figcaption>
+                            <img src="../images/beautyful_Code.png" alt="Nenhuma div">
+                        </figure>
+                    </div>
+                </article>
+
+                <article id="summaryArt">
+                    <h4>&lt;summary&gt;</h4>
+
+                    <p>
+                        É usada para definir um título a tag &lt;details&gt;, que pode ser clicada para abrir ou fechar a aba do texto.
+                    </p>
+
+                    <div class="imgContainer feetByFeet" id="compareCode">
+                        <figure>
+                            <figcaption>Código</figcaption>
+                            <img src="../images/divs_Only.png" alt="Apenas divs">
+                        </figure>
+                        
+                        <figure>
+                            <figcaption>Resultado</figcaption>
+                            <img src="../images/beautyful_Code.png" alt="Nenhuma div">
+                        </figure>
+                    </div>
+
+                    <p>
+                        Usamos as mesmas imagens do tópico &lt;details&gt; pois &lt;summary&gt; sempre vai vir acompanhada dessa outra, como no exemplo acima, 
+                        que o texto Epcot Center é o título que aparece mesmo quando o texto está comprimido.
+                    </p>
+                </article>
+
+                <article id="navArt">
+                    <h4>&lt;nav&gt;</h4>
+
+                    <p>
+                        É usado para agrupar em um bloco uma aba com vários links de navegação no mesmo lugar. 
+                        Nele, a tag &lt;a&gt; é obrigatória, mas você pode escrever textos sem link nela também
+                    </p>
+
+                    <div class="imgContainer feetByFeet" id="compareCode">
+                        <figure>
+                            <figcaption>Código</figcaption>
+                            <img src="../images/divs_Only.png" alt="Apenas divs">
+                        </figure>
+                        
+                        <figure>
+                            <figcaption>Resultado</figcaption>
+                            <img src="../images/beautyful_Code.png" alt="Nenhuma div">
+                        </figure>
+                    </div>
+                </article>
+
+                <article id="mainArt">
+                    <h4>&lt;main&gt;</h4>
+
+                    <p>
+                        Ele especifica qual o conteúdo mais importante/principal do site inteiro. Ele deve ser usado apenas uma vez, e não pode estar dentro das tags:
+                    </p>
+                        <ul>
+                            <li>&lt;article&gt;;</li>
+                            <li>&lt;aside&gt;;</li>
+                            <li>&lt;footer&gt;;</li>
+                            <li>&lt;header&gt;;</li>
+                            <li>&lt;nav&gt;;</li>
+                        </ul>
+                    <p>
+                        É importante citar também, que essa tag não só pode, mas muitas vezes é encontrada dentro da tag &lt;section&gt; e/ou &lt;div&gt;.
+                    </p>
+
+                    <div class="imgContainer feetByFeet" id="compareCode">
+                        <figure>
+                            <figcaption>Código</figcaption>
+                            <img src="../images/divs_Only.png" alt="Apenas divs">
+                        </figure>
+                        
+                        <figure>
+                            <figcaption>Resultado</figcaption>
+                            <img src="../images/beautyful_Code.png" alt="Nenhuma div">
+                        </figure>
+                    </div>
+                </article>
+
+                <article id="asideArt">
+                    <h4>&lt;aside&gt;</h4>
+
+                    <p>
+                        É usada para indicar um conteúdo secundário ao texto principal, encontrado na tag &lt;main&gt;. 
+                        Este deve estar relacionado indiretamente ao mesmo.
+                    </p>
+
+                    <div class="imgContainer feetByFeet" id="compareCode">
+                        <figure>
+                            <figcaption>Código</figcaption>
+                            <img src="../images/divs_Only.png" alt="Apenas divs">
+                        </figure>
+                        
+                        <figure>
+                            <figcaption>Resultado</figcaption>
+                            <img src="../images/beautyful_Code.png" alt="Nenhuma div">
+                        </figure>
+                    </div>
+                </article>
+
+                <article id="figArt">
+                    <h4>&lt;figure&gt; & &lt;figcaption&gt;</h4>
+
+                    <p>
+                        A tag figure é usada para ilustrar uma figura dentro do site, como ilustrações, diagramas, fotos, listas de codigo, entre varias outras.
+                        Enquanto figcaption é usada para inserir uma legenda a tag &lt;figure&gt;.
+                    </p>
+
+                    <div class="imgContainer feetByFeet" id="compareCode">
+                        <figure>
+                            <figcaption>Código</figcaption>
+                            <img src="../images/divs_Only.png" alt="Apenas divs">
+                        </figure>
+                        
+                        <figure>
+                            <figcaption>Resultado</figcaption>
+                            <img src="../images/beautyful_Code.png" alt="Nenhuma div">
+                        </figure>
+                    </div>
+                </article>
+
+                <article id="footerArt">
+                    <h4>&lt;footer&gt;</h4>
+
+                    <p>
+                        A tag Footer é usada para criar rodapés dentro do site, geralmente contendo:
+                    </p>
+                    <ul>
+                        <li>Informações de autoria;</li>
+                        <li>Informações de Direitos Autorais;</li>
+                        <li>Informações de contato (e-mails, telefone, redes sociais, etc.)</li>
+                        <li>Um sitemap (informações sobre a página, links de arquivos e sites relacionados, etc.);</li>
+                        <li>Links para voltar ao topo da página</li>
+                        <li>Documentos relacionados ao site</li>
+                    </ul>
+
+                    <div class="imgContainer feetByFeet" id="compareCode">
+                        <figure>
+                            <figcaption>Código</figcaption>
+                            <img src="../images/divs_Only.png" alt="Apenas divs">
+                        </figure>
+                        
+                        <figure>
+                            <figcaption>Resultado</figcaption>
+                            <img src="../images/beautyful_Code.png" alt="Nenhuma div">
+                        </figure>
+                    </div>
+                </article>
+
+            </section>
+
+        </main>
+
+        
+        <footer>
+                <p>Referências e Links <a href="innerLinks/refs.html">Aqui</a></p>
+                <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" id="copyright">Copyright&#169 2023</a></p>
+        </footer>
+    </div>
+    <script src="../JS/menuButton.js"></script>
+    <script src="../JS/NO_MORE.js"></script>
 </body>
 </html>

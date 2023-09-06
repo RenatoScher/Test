@@ -1,12 +1,10 @@
-/*Corpo principal da página*/
-
 :root {
     --backColor: #1B1464;
 }
 
 body {
     background-color: var(--backColor);
-    height: 320vh;
+    height: 1650vh;
     max-width: 100%;
     margin: 0;
 }
@@ -21,34 +19,32 @@ body > div {
     position: relative;
 }
 
-main {
-    margin-left: 32px;
-}
 
 
 /*Font Faces*/
 
 
+
 @font-face {
     font-family: Titles;
-    src: url(fonts/Prociono-Regular.ttf);
+    src: url(../fonts/Prociono-Regular.ttf);
 }
 
 @font-face {
     font-family: Roboto-Serif-Bold;
-    src: url(fonts/RobotoSerif_28pt-Bold.ttf);
+    src: url(../fonts/RobotoSerif_28pt-Bold.ttf);
 }
 
 @font-face {
     font-family: Roboto-Serif;
-    src: url(fonts/RobotoSerif_28pt-Medium.ttf);
+    src: url(../fonts/RobotoSerif_28pt-Medium.ttf);
 }
 
 
 /*General Text Settings*/
 
 
-p, h1, h2, h3, h4 {
+p, h1, h2, h3, h4, li, figcaption {
     color: white;
 }
 
@@ -72,6 +68,11 @@ h2 {
 
 h3 {
     margin-bottom: 12px;
+    font-family: Roboto-Serif, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 42px;
+    text-decoration: underline;
+    text-underline-offset: 8px;
 }
 
 h4 {
@@ -79,9 +80,13 @@ h4 {
     font-size: 20px;
     font-weight: 600;
 }
+article>h4{
+    font-family: Roboto-Serif-Bold, Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
 
-
-p {
+p, a, article li {
     font-family: Roboto-Serif, Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-weight: normal;
@@ -101,6 +106,7 @@ a:hover {
     text-decoration: none;
     cursor: default;
 }
+
 
 
 /*Top Menu Settings*/
@@ -155,48 +161,80 @@ a:hover {
 .square>p{
     font-size: 60px;
     margin: 0;
-}
-
-#maincharacter{margin-top: 150px;}
-
-
-/*General Article Settings*/
-
-
-article {
-    display: grid;
-}
-
-article h3 {
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 3px;
-    font-size: 32px;
-}
-
-article p {
-    text-align: start;
-    width: 1012px;
+    
 }
 
 
-/*Image settings*/
+/*Main Text*/
+
+
+header {
+    margin-top: 150px;
+}
+
+main {
+    translate: 0 -500px;
+    align-self: flex-end;
+    margin-right: 250px;
+    width: 750px;
+}
+
+
+
+/*Image Settings*/
 
 
 .imgContainer {
     display: flex;
     justify-content: space-between;
+    column-gap: 25px;
 }
 
-.imgContainer#compareCode {
-    width: 650px;
+.imgContainer.feetByFeet {
+    flex-direction: column;
 }
 
-.imgContainer#compareCode div * {
-    width: 300px;
+.imgContainer figure {
+    margin: 0;
+}
+
+.imgContainer figure img {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+
+/*Sidebox Settings*/
+
+#Sidebox{
+    width: 345px;
+    height: 480px;
+    position: sticky;
+    transform: translate(-450px, -70px);
+    top: 200px;
+    margin-top: 64px;
+    translate: -50px;
+    background-color: #9980FA;
+    outline: #725ACF solid 10px;
+    border-radius: 5px;
+}
+
+#Sidebox>h4{
+    font-family: Roboto-Serif, Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    margin-left: 20px;
+}
+li{
+    margin-left: 10px;
+}
+li>p{
+    font-family: Roboto-Serif, Arial, Helvetica, sans-serif;
     font-size: 16px;
+    font-weight: normal;
+    margin-left: 5px;
+    margin-top: -7.5px;
 }
-
 
 
 /*Footer Settings*/
