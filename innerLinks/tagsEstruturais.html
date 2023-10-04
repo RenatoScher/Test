@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Better HTML - Tags Estruturais</title>
-        <link rel="stylesheet" href="tagsStyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better HTML - Tags Estruturais</title>
+    <link rel="stylesheet" href="tagsStyle.css">
+    <link rel="stylesheet" href="Menupremium.css">
 </head>
-<body>
+<body id="Estruturais">
     <div>
         <div id="Menupremium" class="menuOpen">
             <button id="Headshotarow"><img src="../images/icons/Vector.png" alt="Arrow"></button>
             <a href="../index.html" class="square"> <p>Home</p> </a>
-            <a href="#" class="square"> <p>Tags E.</p> </a>
-            <a href="tagsTexto.html" class="square"> <p>Tags N.</p> </a>
-            <a href="../refs.html" class="square"> <p>Refs.</p> </a>
-            <script src="JS/menuButton.js"></script>
+            <a href="#" class="square"> <p>Tags <br> Estruturais</p> </a>
+            <a href="tagsTexto.html" class="square"> <p>Tags <br> Nível do Texto</p> </a>
+            <a href="../refs.html" class="square"> <p>Referências</p> </a>
+
+            <script src="../JS/menuButton.js"></script>
         </div>
 
         <Header>
@@ -31,20 +33,20 @@
                 - Tags Estruturais:
             </h4>
             <ul>
-                <li><p>H1 - H6;</p></li>
-                <li><p>Form;</p></li>
-                <li><p>Table;</p></li>
-                <li><p>Address;</p></li>
-                <li><p>Header;</p></li>
-                <li><p>Section;</p></li>
-                <li><p>Article;</p></li>
-                <li><p>Details;</p></li>
-                <li><p>Summary;</p></li>
-                <li><p>Nav;</p></li>
-                <li><p>Main;</p></li>
-                <li><p>Aside;</p></li>
-                <li><p>Figure/Fig caption;</p></li>
-                <li><p>Footer;</p></li>
+                <li><button>H1 - H6;</button></li>
+                <li><button>Form;</button></li>
+                <li><button>Table;</button></li>
+                <li><button>Address;</button></li>
+                <li><button>Header;</button></li>
+                <li><button>Section;</button></li>
+                <li><button>Article;</button></li>
+                <li><button>Details;</button></li>
+                <li><button>Summary;</button></li>
+                <li><button>Nav;</button></li>
+                <li><button>Main;</button></li>
+                <li><button>Aside;</button></li>
+                <li><button>Figure/Fig caption;</button></li>
+                <li><button>Footer;</button></li>
             </ul>
         </div>
 
@@ -62,7 +64,7 @@
 
             </article>
 
-            <section>
+            <section id="MainTXT">
 
                 <h3>Tags Estruturais</h3>
 
@@ -77,17 +79,17 @@
                     <div class="imgContainer sideBySide" id="compareCode">
                         <figure>
                             <figcaption>Código</figcaption>
-                            <img src="../images/divs_Only.png" alt="Apenas divs">
+                            <img src="../images/TagsEstruturais/H - Código.png" alt="H1-H6 Código">
                         </figure>
                         
                         <figure>
                             <figcaption>Resultado</figcaption>
-                            <img src="../images/beautyful_Code.png" alt="Nenhuma div">
+                            <img src="../images/TagsEstruturais/H - Resultado.png" alt="H1-H6 Resultado">
                         </figure>
                     </div>
 
                     <p>
-                        É importante citar que h1 deve ser usado apenas uma vez no texto inteiro, descrevendo o título da página inteira. 
+                        É importante citar que h1 deve ser usado  Código uma vez no texto inteiro, descrevendo o título da página inteira. 
                         E também que não se deve “pular” uma das sequências do h: primeiro use h1, depois h2, depois h3 e assim por diante, afinal, eles são organizados por ordem de importância também.</p>
                 </article>
 
@@ -102,12 +104,12 @@
                     <div class="imgContainer sideBySide" id="compareCode">
                         <figure>
                             <figcaption>Código</figcaption>
-                            <img src="../images/divs_Only.png" alt="Apenas divs">
+                            <img src="../images/TagsEstruturais/Form - Código.png" alt="Form Código">
                         </figure>
                         
                         <figure>
                             <figcaption>Resultado</figcaption>
-                            <img src="../images/beautyful_Code.png" alt="Nenhuma div">
+                            <img src="../images/TagsEstruturais/Form- Resultado.png" alt="Form Resultado">
                         </figure>
                     </div>
 
@@ -126,12 +128,12 @@
                     <div class="imgContainer sideBySide" id="compareCode">
                         <figure>
                             <figcaption>Código</figcaption>
-                            <img src="../images/divs_Only.png" alt="Apenas divs">
+                            <img src="../images/TagsEstruturais/Table - Código.png" alt="Table Código">
                         </figure>
                         
                         <figure>
                             <figcaption>Resultado</figcaption>
-                            <img src="../images/beautyful_Code.png" alt="Nenhuma div">
+                            <img src="../images/TagsEstruturais/Table - Resultado.png" alt="Table Resultado">
                         </figure>
                     </div>
 
@@ -143,7 +145,7 @@
                 </article>
 
                 <article id="adressArt">
-                    <h4>&lt;adress&gt;</h4>
+                    <h4>&lt;address&gt;</h4>
 
                     <p>
                         É usada para definir informações de contato do autor de um documento ou artigo. É onde anexamos e-mails e números de celular por exemplo.
@@ -152,12 +154,12 @@
                     <div class="imgContainer feetByFeet" id="compareCode">
                         <figure>
                             <figcaption>Código</figcaption>
-                            <img src="../images/divs_Only.png" alt="Apenas divs">
+                            <img src="../images/TagsEstruturais/Adress - Código.png" alt="Adress Código">
                         </figure>
                         
                         <figure>
                             <figcaption>Resultado</figcaption>
-                            <img src="../images/beautyful_Code.png" alt="Nenhuma div">
+                            <img src="../images/TagsEstruturais/Adress - Resultado.png" alt="Adress Resultado">
                         </figure>
                     </div>
 
@@ -178,12 +180,12 @@
                     <div class="imgContainer feetByFeet" id="compareCode">
                         <figure>
                             <figcaption>Código</figcaption>
-                            <img src="../images/divs_Only.png" alt="Apenas divs">
+                            <img src="../images/TagsEstruturais/Header - Código.png" alt="Header Código">
                         </figure>
                         
                         <figure>
                             <figcaption>Resultado</figcaption>
-                            <img src="../images/beautyful_Code.png" alt="Nenhuma div">
+                            <img src="../images/TagsEstruturais/Header - Resultado.png" alt="Header Resultado">
                         </figure>
                     </div>
                 </article>
@@ -198,12 +200,12 @@
                     <div class="imgContainer feetByFeet" id="compareCode">
                         <figure>
                             <figcaption>Código</figcaption>
-                            <img src="../images/divs_Only.png" alt="Apenas divs">
+                            <img src="../images/TagsEstruturais/Section - Código.png" alt="Section Código">
                         </figure>
                         
                         <figure>
                             <figcaption>Resultado</figcaption>
-                            <img src="../images/beautyful_Code.png" alt="Nenhuma div">
+                            <img src="../images/TagsEstruturais/Section - Resultado.png" alt="Section Resultado">
                         </figure>
                     </div>
 
@@ -213,6 +215,8 @@
                 </article>
 
                 <article id="articleArt">
+                    <h4>&lt;article&gt;</h4>
+
                     <p>
                         É usada para indicar um bloco de artigo no site. Ela deve conter pelo menos:
                         <ul>
@@ -224,18 +228,20 @@
                     <div class="imgContainer feetByFeet" id="compareCode">
                         <figure>
                             <figcaption>Código</figcaption>
-                            <img src="../images/divs_Only.png" alt="Apenas divs">
+                            <img src="../images/TagsEstruturais/Article - Código.png" alt="Article Código">
                         </figure>
                         
                         <figure>
                             <figcaption>Resultado</figcaption>
-                            <img src="../images/beautyful_Code.png" alt="Nenhuma div">
+                            <img src="../images/TagsEstruturais/Article - Resultado.png" alt="Article Resultado">
                         </figure>
                     </div>
 
                 </article>
 
                 <article id="detailsArt">
+                    <h4>&lt;details&gt;</h4>
+
                     <p>
                         É usada para criar um bloco de texto interativo com um título, onde o usuário pode comprimir e extender o texto clicando no título para otimizar o espaço ocupado pelo texto.
                     </p>
@@ -243,12 +249,13 @@
                     <div class="imgContainer feetByFeet" id="compareCode">
                         <figure>
                             <figcaption>Código</figcaption>
-                            <img src="../images/divs_Only.png" alt="Apenas divs">
+                            <img src="../images/TagsEstruturais/Details - Código.png" alt="Details Código">
                         </figure>
                         
                         <figure>
                             <figcaption>Resultado</figcaption>
-                            <img src="../images/beautyful_Code.png" alt="Nenhuma div">
+                            <img src="../images/TagsEstruturais/Details - Resultado 1.png" alt="Details Resultado 1">
+                            <img src="../images/TagsEstruturais/Details - Resultado 2.png" alt="Details Resultado 2">
                         </figure>
                     </div>
                 </article>
@@ -263,12 +270,13 @@
                     <div class="imgContainer feetByFeet" id="compareCode">
                         <figure>
                             <figcaption>Código</figcaption>
-                            <img src="../images/divs_Only.png" alt="Apenas divs">
+                            <img src="../images/TagsEstruturais/Summary - Código.png" alt="Summary Código">
                         </figure>
                         
                         <figure>
                             <figcaption>Resultado</figcaption>
-                            <img src="../images/beautyful_Code.png" alt="Nenhuma div">
+                            <img src="../images/TagsEstruturais/Summary - Resultado 1.png" alt="Summary Resultado 1">
+                            <img src="../images/TagsEstruturais/Summary - Resultado 2.png" alt="Summary Resultado 2">
                         </figure>
                     </div>
 
@@ -289,12 +297,12 @@
                     <div class="imgContainer feetByFeet" id="compareCode">
                         <figure>
                             <figcaption>Código</figcaption>
-                            <img src="../images/divs_Only.png" alt="Apenas divs">
+                            <img src="../images/TagsEstruturais/Nav - Código.png" alt="Nav Código">
                         </figure>
                         
                         <figure>
                             <figcaption>Resultado</figcaption>
-                            <img src="../images/beautyful_Code.png" alt="Nenhuma div">
+                            <img src="../images/TagsEstruturais/Nav - Resultado.png" alt="Nav Resultado">
                         </figure>
                     </div>
                 </article>
@@ -303,7 +311,7 @@
                     <h4>&lt;main&gt;</h4>
 
                     <p>
-                        Ele especifica qual o conteúdo mais importante/principal do site inteiro. Ele deve ser usado apenas uma vez, e não pode estar dentro das tags:
+                        Ele especifica qual o conteúdo mais importante/principal do site inteiro. Ele deve ser usado  Código uma vez, e não pode estar dentro das tags:
                     </p>
                         <ul>
                             <li>&lt;article&gt;;</li>
@@ -319,12 +327,12 @@
                     <div class="imgContainer feetByFeet" id="compareCode">
                         <figure>
                             <figcaption>Código</figcaption>
-                            <img src="../images/divs_Only.png" alt="Apenas divs">
+                            <img src="../images/TagsEstruturais/Main - Código.png" alt="Main Código">
                         </figure>
                         
                         <figure>
                             <figcaption>Resultado</figcaption>
-                            <img src="../images/beautyful_Code.png" alt="Nenhuma div">
+                            <img src="../images/TagsEstruturais/Main - Resultado.png" alt="Main Resultado">
                         </figure>
                     </div>
                 </article>
@@ -340,12 +348,12 @@
                     <div class="imgContainer feetByFeet" id="compareCode">
                         <figure>
                             <figcaption>Código</figcaption>
-                            <img src="../images/divs_Only.png" alt="Apenas divs">
+                            <img src="../images/TagsEstruturais/Aside - Código.png" alt="Aside Código">
                         </figure>
                         
                         <figure>
                             <figcaption>Resultado</figcaption>
-                            <img src="../images/beautyful_Code.png" alt="Nenhuma div">
+                            <img src="../images/TagsEstruturais/Aside - Resultado.png" alt="Aside Resultado">
                         </figure>
                     </div>
                 </article>
@@ -361,12 +369,12 @@
                     <div class="imgContainer feetByFeet" id="compareCode">
                         <figure>
                             <figcaption>Código</figcaption>
-                            <img src="../images/divs_Only.png" alt="Apenas divs">
+                            <img src="../images/TagsEstruturais/Figure - Código.png" alt="Figure Código">
                         </figure>
                         
                         <figure>
                             <figcaption>Resultado</figcaption>
-                            <img src="../images/beautyful_Code.png" alt="Nenhuma div">
+                            <img src="../images/TagsEstruturais/Figure - Resultado.png" alt="Figure Resultado">
                         </figure>
                     </div>
                 </article>
@@ -389,12 +397,12 @@
                     <div class="imgContainer feetByFeet" id="compareCode">
                         <figure>
                             <figcaption>Código</figcaption>
-                            <img src="../images/divs_Only.png" alt="Apenas divs">
+                            <img src="../images/TagsEstruturais/Footer - Código.png" alt="Footer Código">
                         </figure>
                         
                         <figure>
                             <figcaption>Resultado</figcaption>
-                            <img src="../images/beautyful_Code.png" alt="Nenhuma div">
+                            <img src="../images/TagsEstruturais/Footer - Resultado.png" alt="Footer Resultado">
                         </figure>
                     </div>
                 </article>
@@ -406,10 +414,11 @@
         
         <footer>
                 <p>Referências e Links <a href="innerLinks/refs.html">Aqui</a></p>
-                <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" id="copyright">Copyright&#169 2023</a></p>
+                <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" id="copyright">Todos os direitos reservados</a></p>
         </footer>
     </div>
-    <script src="../JS/menuButton.js"></script>
+
     <script src="../JS/NO_MORE.js"></script>
+    <script src="../JS/sidebox.js"></script>
 </body>
 </html>

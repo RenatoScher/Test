@@ -1,0 +1,63 @@
+/*Top Menu Settings*/
+
+
+#Menupremium{
+    width: 1350px;
+    height: 200px;
+    border-radius: 0px 0px 10px 10px;
+    background-color: #725ACF ;
+    display: flex;
+    position: fixed;
+    justify-content: space-evenly;
+    transition: all 600ms ease-in-out;
+    z-index: 200;
+}
+
+#Headshotarow{
+    position:absolute;
+    bottom: 5px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 100%;
+}
+
+#Headshotarow img{
+    transition: rotate 600ms ease-in-out;
+    transform: scale(0.7);
+}
+
+.omagaAnimatio {
+    rotate: 180deg;
+}
+
+.menuOpen {
+    translate: 0 -150px;
+}
+
+.square{
+    width: 300px;
+    height: 110.95px;
+    background-color: #9980FA;
+    position: relative;
+    top: 38px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: grid;
+    place-items: center;
+    transition: 280ms scale;
+}
+
+.square>p{
+    font-size: 40px;
+    margin: 0;
+    text-align: center;
+}
+
+.square:last-child, .square:first-child {
+    font-size: 120px;
+}
+
+.square:hover {
+    scale: 1.02;
+}

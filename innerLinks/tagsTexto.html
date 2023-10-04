@@ -1,59 +1,296 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Better HTML - Tags do Nível do Texto</title>
-    <link rel="stylesheet" href="tagsStyle.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Better HTML - Tags Estruturais</title>
+        <link rel="stylesheet" href="tagsStyle.css">
+        <link rel="stylesheet" href="Menupremium.css">
 </head>
-<body>
+<body id="Texto">
     <div>
         <div id="Menupremium" class="menuOpen">
             <button id="Headshotarow"><img src="../images/icons/Vector.png" alt="Arrow"></button>
             <a href="../index.html" class="square"> <p>Home</p> </a>
-            <a href="tagsEstruturais.html" class="square"> <p>Tags E.</p> </a>
-            <a href="#" class="square"> <p>Tags N.</p> </a>
-            <a href="../refs.html" class="square"> <p>Refs.</p> </a>
+            <a href="tagsEstruturais.html" class="square"> <p>Tags <br> Estruturais</p> </a>
+            <a href="#" class="square"> <p>Tags <br> Nível do Texto</p> </a>
+            <a href="../refs.html" class="square"> <p>Referências</p> </a>
 
-            <script src="JS/menuButton.js"></script>
+            <script src="../JS/menuButton.js"></script>
+        </div>
+
+        <Header>
+            <h1>
+                Better HTML
+            </h1>
+            <h2>
+                Tags do Nivel do Texto
+            </h2>
+        </Header>
+    
+        <div id="Sidebox">
+            <h4>
+                - Tags do Nivel do Texto:
+            </h4>
+            <ul>
+                <li><button>A;</button></li>
+                <li><button>Label</button></li>
+                <li><button>Em;</button></li>
+                <li><button>Strong;</button></li>
+                <li><button>Mark;</button></li>
+                <li><button>Time;</button></li>
+                <li><button>Cite;</button></li>
+                <li><button>Q & Blockquote;</button></li>
+                <li><button>Small;</button></li>
+            </ul>
         </div>
 
 
-        <div id="maincharacter">
+        <main>
 
-            <Header>
-                <h1>
-                    Better HTML
-                </h1>
-                <h2>
-                    Tags do Nível do Texto
-                </h2>
-            </Header>
-    
-    
-            <div id="Sidebox">
-                <h4>
-                    - Tags Do Nivel Do Texto:
-                </h4>
-            </div>
-    
-    
-            <div id="maincharacter">
-                <main>
-                    
-                </main>
-            </div>
+            <article id="Types">
 
-        </div>
+                <h3>Tipos de Tags Semânticas</h3>
 
+                <p>
+                    Existem 2 tipos de tags semânticas: as Estruturais e as do Nível de Texto. As estruturais servem para estruturar a página visualmente, enquanto as do Nível do Texto para alterar visualmente um texto dentro da página.
+                </p>
+                <a href="tagsEstruturais.html">Ir para as Tags Estruturais</a>
+
+            </article>
+
+            <section id="MainTXT">
+
+                <h3>Tags do Nivel do texto</h3>
+
+                <article id="h1-h6Art">
+                    <h4>&lt;a&gt;</h4>
+
+                    <p>
+                        É uma tag usada para definir um Hyperlink, um texto que, ao clique, te redireciona para outra página. O link o qual o texto vai redirecionar o usuário deve ser definido com uma propiedade chamada “href”, caso contrário o conteúdo da tag nem irá aparecer.
+                        Caso a tag seja aplicada sem mudanças no CSS, essa tag vai estar sublinhada com uma dessas 3 cores:<br>
+                        <ul>
+                        <li>Azul caso o usuário nunca tenha visitado o link inserido na tag antes;</li>
+                        <li>Roxo caso ele já tenha visitado o link inserido na tag antes;</li>
+                        <li>Vermelho quando o usuário clica nele, logo antes de ser redirecionado.</li>
+                        </ul>
+                    </p>
+
+                    <div class="imgContainer feetByFeet" id="compareCode">
+                        <figure>
+                            <figcaption>Código</figcaption>
+                            <img src="../images/TagsTexto/A - Código.png" alt="Apenas divs">
+                        </figure>
+                        
+                        <figure>
+                            <figcaption>Resultado</figcaption>
+                            <img src="../images/TagsTexto/A - Resultado.png" alt="Nenhuma div">
+                        </figure>
+                    </div>
+                </article>
+
+                <article id="formArt">
+                    <h4>&lt;label&gt;</h4>
+
+                    <p>
+                        É usado para indicar um texto anexado a outro elemento, (como por exemplo o &lt;input&gt;).
+                        Essa tag é diferente de por um h1-h6 do outro elemento pois ao clicar no label, o elemento anexado a ela também é acionado, assim ajudando por exemplo pessoas que tem dificuldade em acertar áreas pequenas do site (como checkboxes).
+                    </p>
+
+                    <div class="imgContainer sideBySide" id="compareCode">
+                        <figure>
+                            <figcaption>Código</figcaption>
+                            <img src="../images/TagsTexto/Label - Código.png" alt="Apenas divs">
+                        </figure>
+                        
+                        <figure>
+                            <figcaption>Resultado</figcaption>
+                            <img src="../images/TagsTexto/Label - Resultado.png" alt="Nenhuma div">
+                        </figure>
+                    </div>
+                </article>
+
+                <article id="tableArt">
+                    <h4>&lt;em&gt;</h4>
+
+                    <p>
+                        Essa tag é usada para emfatizar uma parte do texto do site, mostrando seu conteúdo destacado em itálico.
+                        Quando essa tag está presente, leitores de tela vão citar o trecho destacado com ênfase na fala também, deixando assim o texto do site mais acessível para quem precisa usar dessa ferramenta.
+                    </p>
+
+                    <div class="imgContainer sideBySide" id="compareCode">
+                        <figure>
+                            <figcaption>Código</figcaption>
+                            <img src="../images/TagsTexto/Em - Código.png" alt="Apenas divs">
+                        </figure>
+                        
+                        <figure>
+                            <figcaption>Resultado</figcaption>
+                            <img src="../images/TagsTexto/Em - Resultado.png" alt="Nenhuma div">
+                        </figure>
+                    </div>
+                </article>
+
+                <article id="adressArt">
+                    <h4>&lt;strong&gt;</h4>
+
+                    <p>
+                        Ela é usada para definir um trecho do texto que possui uma grande importância para todo o contexto do texto em si.
+                        Esta afeta o texto também, destacando seu trecho em negrito.
+                    </p>
+
+                    <div class="imgContainer feetByFeet" id="compareCode">
+                        <figure>
+                            <figcaption>Código</figcaption>
+                            <img src="../images/TagsTexto/Strong - Código.png" alt="Apenas divs">
+                        </figure>
+                        
+                        <figure>
+                            <figcaption>Resultado</figcaption>
+                            <img src="../images/TagsTexto/Strong - Resultado.png" alt="Nenhuma div">
+                        </figure>
+                    </div>
+                    <p>
+                        É importante recitar que esta deve ser usada apenas para trechos importantes, e que caso você queira deixar um texto menos importante em negrito, use CSS ou a tag &lt;b&gt;.
+                    </p>
+                </article>
+
+                <article id="headerArt">
+                    <h4>&lt;mark&gt;</h4>
+
+                    <p>
+                        Essa tag bota uma parte do texto em realçe, o marcando. Ela faz um efeito parecido como o de um marca-texto escolar, mudando a cor de fundo do texto.
+                    </p>
+
+                    <div class="imgContainer feetByFeet" id="compareCode">
+                        <figure>
+                            <figcaption>Código</figcaption>
+                            <img src="../images/TagsTexto/Mark - Código.png" alt="Apenas divs">
+                        </figure>
+                        
+                        <figure>
+                            <figcaption>Resultado</figcaption>
+                            <img src="../images/TagsTexto/Mark - Resultado.png" alt="Nenhuma div">
+                        </figure>
+                    </div>
+                </article>
+
+                <article id="sectionArt">
+                    <h4>&lt;time&gt;</h4>
+
+                    <p>
+                        Ela é usada para definir um horário ou uma data específica.
+                        A principal função desse elemento é traduzir seu conteúdo de um jeito que a máquina do usuário possa interpretá-la melhor, traduzindo com perfeição esse trecho para qualquer língua. Ela também possibilita o usuário a adicionar lembretes em seu calendário virtual.
+                    </p>
+
+                    <div class="imgContainer feetByFeet" id="compareCode">
+                        <figure>
+                            <figcaption>Código</figcaption>
+                            <img src="../images/TagsTexto/Time - Código.png" alt="Apenas divs">
+                        </figure>
+                        
+                        <figure>
+                            <figcaption>Resultado</figcaption>
+                            <img src="../images/TagsTexto/Time - Resultado.png" alt="Nenhuma div">
+                        </figure>
+                    </div>
+
+
+                </article>
+
+                <article id="articleArt">
+                    <h4>&lt;cite&gt;</h4>
+                    <p>
+                        Esta define um título de uma obra de arte ou de literatura, como livros, poemas, músicas, esculturas, etc.
+                        Esse trecho é renderizado em itálico, e a tag não deve ser utilizada para citar o nome do autor.
+                    </p>
+
+                    <div class="imgContainer feetByFeet" id="compareCode">
+                        <figure>
+                            <figcaption>Código</figcaption>
+                            <img src="../images/TagsTexto/Cite - Código.png" alt="Apenas divs">
+                        </figure>
+                        
+                        <figure>
+                            <figcaption>Resultado</figcaption>
+                            <img src="../images/TagsTexto/Cite - Resultado.png" alt="Nenhuma div">
+                        </figure>
+                    </div>
+
+                </article>
+
+                <article id="detailsArt">
+                    <h4>&lt;q&gt; & &lt;blockquote&gt;</h4>
+                    <p>
+                        As tags &lt;q&gt; e &lt;blockquote&gt; são usadas para definir uma citação diretas, onde &lt;q&gt; é para citações curtas e &lt;blockquote&gt; para citações longas.
+                            *Imagem*
+                            Note que a tag &lt;q&gt; são usadas dentro do trecho do texto, e as aspas ao seu redor são geradas automaticamente. Agora a tag &lt;blockquote&gt; cria um novo parágrafo, com recuo e espaçamento automático.
+                    </p>
+
+                    <div class="imgContainer feetByFeet" id="compareCode">
+                        <figure>
+                            <figcaption>&lt;q&gt; - Código</figcaption>
+                            <img src="../images/TagsTexto/Q - Código.png" alt="Apenas divs">
+                        </figure>
+                        
+                        <figure>
+                            <figcaption>&lt;q&gt; - Resultado</figcaption>
+                            <img src="../images/TagsTexto/Q - Resultado.png" alt="Nenhuma div">
+                        </figure>
+
+                        <figure>
+                            <figcaption>&lt;blockquote&gt; - Código</figcaption>
+                            <img src="../images/TagsTexto/BQ - Código.png" alt="Apenas divs">
+                        </figure>
+                        
+                        <figure>
+                            <figcaption>&lt;blockquote&gt; - Resultado</figcaption>
+                            <img src="../images/TagsTexto/BQ - Resultado.png" alt="Blockquote Resultado">
+                        </figure>
+                    </div>
+                </article>
+
+                <article id="summaryArt">
+                    <h4>&lt;small&gt;</h4>
+
+                    <p>
+                        Essa tag é usada para formatar textos com um tamanho de fonte pequeno, como abas de copyright, comentários entre o texto ou trechos menos importantes.
+                        Sua formatação apenas transforma o texto com a fonte “smaller”, então é possível alcançar o mesmo resultado com modificações no CSS.
+                    </p>
+
+                    <div class="imgContainer feetByFeet" id="compareCode">
+                        <figure>
+                            <figcaption>Código</figcaption>
+                            <img src="../images/TagsTexto/Small - Código.png" alt="Apenas divs">
+                        </figure>
+                        
+                        <figure>
+                            <figcaption>Resultado</figcaption>
+                            <img src="../images/TagsTexto/Small - Resultado.png" alt="Nenhuma div">
+                        </figure>
+                    </div>
+
+                    <p>
+                        Usamos as mesmas imagens do tópico &lt;details&gt; pois &lt;summary&gt; sempre vai vir acompanhada dessa outra, como no exemplo acima, 
+                        que o texto Epcot Center é o título que aparece mesmo quando o texto está comprimido.
+                    </p>
+                </article>
+
+                
+
+            </section>
+
+        </main>
 
         <footer>
             <p>Referências e Links <a href="innerLinks/refs.html">Aqui</a></p>
-            <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" id="copyright">Copyright&#169 2023</a></p>
+            <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" id="copyright">Todos os Direitos Reservados</a></p>
         </footer>
+        
     </div>
 
     <script src="../JS/menuButton.js"></script>
     <script src="../JS/NO_MORE.js"></script>
+    <script src="../JS/sidebox.js"></script>
 </body>
 </html>
