@@ -1,0 +1,40 @@
+/*Footer Settings*/
+
+
+
+footer {
+    margin: 0;
+    width: 100%;
+    height: fit-content;
+    background-color: #725ACF;
+    position: absolute;
+    bottom: -200px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+}
+
+footer p {
+    margin-top: 8px;
+    margin-left: 64px;
+    margin-right: 64px;
+    margin-bottom: 0;
+    font-size:24px;
+}
+
+footer button {
+    align-self: center;
+    justify-self: flex-start;
+    width: 200px;
+    background: transparent;
+    font-family: Roboto-Serif-Bold;
+    font-size: x-large;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+footer p:last-child {
+    align-self: flex-end;
+    margin: 0 8px 8px 0;
+}
