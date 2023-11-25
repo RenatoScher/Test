@@ -1,0 +1,85 @@
+/* Corpo Principal */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--backColor);
+    width: 100vw;
+    max-width: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+/* Texto */
+@font-face {
+    font-family: Titles;
+    src: url(fonts/Prociono-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Serif-Bold;
+    src: url(fonts/RobotoSerif_28pt-Bold.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Serif;
+    src: url(fonts/RobotoSerif_28pt-Medium.ttf);
+}
+
+p, h1, h2, h3, h4, li {
+    color: white;
+}
+
+li a {
+    word-wrap: break-word;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    font-family: Titles, 'Times New Roman', Times, serif;
+    font-size: 86px;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 12px;
+    font-weight: normal;
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+    translate: 0 -32px;
+    font-size: 46px;
+    margin-top: 50px;
+}
+
+h3 {
+    margin-bottom: 12px;
+    text-align: left;
+    font-size: 36px;
+
+}
+
+h4 {
+    font-family: Roboto-Serif-Bold, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+p {
+    font-family: Roboto-Serif, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+a {
+    color: #1F35FF;
+    transition: all 800ms;
+}
+
+a:hover {
+    color: #ff411f;
+}

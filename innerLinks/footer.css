@@ -1,7 +1,5 @@
 /*Footer Settings*/
 
-
-
 footer {
     margin: 0;
     width: 100%;
@@ -37,4 +35,10 @@ footer button {
 footer p:last-child {
     align-self: flex-end;
     margin: 0 8px 8px 0;
+}
+
+#copyright {
+    color: white;
+    text-decoration: none;
+    cursor: default;
 }

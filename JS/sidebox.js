@@ -1,24 +1,38 @@
 const sidebox = document.querySelector('#Sidebox').querySelector('ul').children;
-const articles = document.querySelector('#MainTXT').children;
+const titles = [];
+
+for (const art of document.querySelector('#MainTXT').children) {
+    if (document.querySelector('#MainTXT').querySelectorAll('iframe').length == 0) {
+        if (art.tagName == 'ARTICLE') {
+            titles.push(art.querySelector('h4'));
+        }
+    } else {
+        if (art.tagName == 'H4') {
+            titles.push(art);
+        }
+    }
+}
+
+console.log(titles);
 
 for (const il of sidebox) {
+    if (il.tagName == 'P') {
+        console.log(il);
+        continue;
+    }
     const btn = il.querySelector('button');
+    const btnText = btn.innerText.replaceAll(' ', '').replaceAll('/', '').replace(';', '').replace('&', '').toLowerCase().normalize();
 
     btn.addEventListener('click', function() {
 
-        const btnText = btn.innerText.split(' ')[0].split('/')[0].replace(';', '').toLowerCase().normalize();
+        for (const art of titles) {
+            let artText = art.innerText.toLowerCase().replaceAll('<', '').replaceAll('>', '').replaceAll(' ', '').replaceAll('/', '').replace('&', '').normalize();
 
-        for (const art of articles) {
-            if (art.tagName != 'ARTICLE') {
-                continue;
-            }
+            console.log(btn, btnText, artText);
 
-            const artText = art.querySelector('h4').innerText.toLowerCase();
-
-            console.log('<' + btnText + '>', artText, artText.includes('<' + btnText + '>'));
-
-            if (artText.includes('<' + btnText + '>')) {
+            if (artText.includes(btnText)) {
                 window.scrollTo(0, art.getBoundingClientRect().top - document.querySelector('body').getBoundingClientRect().top - 120);
+                break;
             }
         }
     })
